@@ -1,0 +1,6 @@
+# CMake
+cmake-build-debug/
+cmake-build-release/
+
+# User-specific stuff:
+.idea/
