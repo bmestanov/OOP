@@ -32,3 +32,7 @@ bmestanov @ facebook, github, gmail
 Examples 1,2
 ### Dynamic memory
 Examples 3,4
+
+Link to read more: http://www.cplusplus.com/doc/tutorial/dynamic/
+
+! Remember: Each time you call `new`, you should call `delete` on the same memory.  
