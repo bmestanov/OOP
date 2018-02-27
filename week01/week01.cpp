@@ -70,3 +70,7 @@ void swapExample(int &a, int &b) {
     a = b;
     b = temp;
 }
+
+int main01() {
+    std::cout << "Nothing here";
+}
