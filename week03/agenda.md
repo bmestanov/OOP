@@ -31,11 +31,11 @@ Requirements:
 * No getters or setters
 
 Methods:
-* sum()           Returns the current sum
-* add(unsigned)   Adds to the sum
-* sub(unsigned)   Subtracts from the sum
-* changes()       Count of changes to the sum
-* average()       Average of changes
+* `sum()`          Returns the current sum
+* `add(unsigned int)`   Adds to the sum
+* `sub(unsigned int)`   Subtracts from the sum
+* `changes()`   Count of changes to the sum
+* `average()`       Average of changes
 
 Example:
 ```
@@ -46,4 +46,16 @@ s.sub(2);
 cout << s.sum(); // 10 + 3 - 2 = 11
 cout << s.changes(); // 3
 cout << s.average(); // (10 + 3 - 2)/3 = 3.66
+```
+
+### Exercise home
+Add the following capabilities to our `NumSum` class:
+* `maxChange()`   Returns the maximum of all changes
+* `minChange()`   Returns the minimum of all changes
+* `range()` Returns the range between min & max
+* Add validation to `sub(unsigned int)` avoid situations like these:
+```
+s.add(10);
+s.sub(100);
+cout << s.sum(); // ???
 ```

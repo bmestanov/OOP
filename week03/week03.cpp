@@ -3,6 +3,8 @@
 //
 
 #include <cstring>
+#include <iomanip>
+#include "NumSum.h"
 
 //---------- Example 1
 class Student {
@@ -37,28 +39,32 @@ private:
 };
 
 Document::Document() {
+    std::cout << "Default constructor called" << std::endl;
     std::strcpy(this->title, "No title");
     this->pages = 0;
 }
 
 Document::Document(const char *title, unsigned pages) {
+    std::cout << "Custom constructor called" << std::endl;
     std::strcpy(this->title, title);
     this->pages = pages;
 }
 
 Document::Document(const Document &other) {
+    std::cout << "Copy constructor called" << std::endl;
     std::strcpy(this->title, other.title);
     this->pages = other.pages;
 }
 
 Document &Document::operator=(const Document &other) {
+    std::cout << "operator= called" << std::endl;
     std::strcpy(this->title, other.title);
     this->pages = other.pages;
     return *this;
 }
 
 void Document::print() const {
-    std::cout << title << " " << pages;
+    std::cout << title << " " << pages << std::endl;
 }
 
 
@@ -66,11 +72,16 @@ void example3(Document document) {
     document.print();
 }
 
-
 int main03() {
     Document a;
     Document b = Document("Document 1", 32);
     Document c = Document(b);
     a = c;
     example3(a);
+
+    NumSum sum = NumSum(1);
+    sum.add(5);
+    sum.add(6);
+    sum.add(7);
+    std::cout << std::setprecision(2) << std::fixed << sum.average();
 }
