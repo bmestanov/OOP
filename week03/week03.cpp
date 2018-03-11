@@ -76,6 +76,11 @@ int main03() {
     Document a;
     Document b = Document("Document 1", 32);
     Document c = Document(b);
+    Document &d = c;
+    Document *pC = &c;
+    std::cout << &c << std::endl;
+    std::cout << &d << std::endl;
+    std::cout << pC << std::endl;
     a = c;
     example3(a);
 
@@ -84,4 +89,5 @@ int main03() {
     sum.add(6);
     sum.add(7);
     std::cout << std::setprecision(2) << std::fixed << sum.average();
+    return 0;
 }

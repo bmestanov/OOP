@@ -73,4 +73,5 @@ void swapExample(int &a, int &b) {
 
 int main01() {
     std::cout << "Nothing here";
+    return 0;
 }

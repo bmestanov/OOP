@@ -46,4 +46,5 @@ int main02() {
     int maxIdx = maxIndex(accountArr, 2);
     std::cout << "Max account" << std::endl;
     accountArr[maxIdx].print();
+    return 0;
 }
