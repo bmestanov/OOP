@@ -36,6 +36,12 @@ public:
 
     void multiplyBy(int);
 
+    void operator+=(const Tuple &);
+
+    void operator*=(const Tuple &);
+
+    void operator*=(int);
+
 private:
     int first;
     int second;

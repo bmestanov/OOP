@@ -50,8 +50,7 @@ int Tuple::sum() const {
 }
 
 double Tuple::average() const {
-    // if (second == 0) ...
-    return ((double) first) / second;
+    return ((double) sum()) / 2;
 }
 
 void Tuple::incrementBy(const Tuple &other) {
@@ -68,3 +67,17 @@ void Tuple::multiplyBy(int scalar) {
     this->first *= scalar;
     this->second *= scalar;
 }
+
+void Tuple::operator+=(const Tuple &other) {
+    multiplyBy(other);
+}
+
+void Tuple::operator*=(const Tuple &other) {
+    multiplyBy(other);
+}
+
+void Tuple::operator*=(int scalar) {
+    multiplyBy(scalar);
+}
+
+
