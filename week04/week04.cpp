@@ -3,6 +3,7 @@
 //
 
 #include <iostream>
+#include "Tuple.h"
 
 // Example 1 ----------------
 class Lamp {
