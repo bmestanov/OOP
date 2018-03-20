@@ -29,16 +29,16 @@ Declare and define
   Prints out the record in readable format
 
 #### Exercise home
-* `friend bool operator==(const PhonebookRecord&, const PhonebookRecord &)` Returns true if names are identical
-* `friend bool operator<(const PhonebookRecord&, const PhonebookRecord &)` Compares the records by name
+* `friend bool operator==(const PhonebookRecord&, const PhonebookRecord &)` Returns true if names, numbers and type are identical
+* `friend bool operator<(const PhonebookRecord&, const PhonebookRecord &)` Compares the records by name, if equal compares by phone
 > Hint: use `strcmp`
 
 Example:
 ```
 PhonebookRecord a = PhonebookRecord("Ivan", "0898856777", PhoneType::personal);
 PhonebookRecord b = PhonebookRecord("Ivan", "02/125/128", PhoneType::home);
-a == b; // true
-a < b; // false
+a == b; // false, phone is different
+a < b; // false, names are same, compare by number
 ```
 
 ## To be solved on week06
