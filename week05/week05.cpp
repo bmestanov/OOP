@@ -3,6 +3,8 @@
 //
 
 #include <iostream>
+#include <cstring>
+#include "PhonebookRecord.h"
 
 // Finds the average of two ints
 // demonstrates the use of local classes
@@ -25,5 +27,9 @@ double example1(int a, int b) {
 
 int main05() {
     // Helper is not defined here
+
+    // Testing the PhonebookRecord class
+    PhonebookRecord rec = PhonebookRecord("ivan", "089884550", PhoneType::personal);
+    std::cout << rec;
     return 0;
 }
