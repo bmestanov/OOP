@@ -22,7 +22,7 @@ Holds the following state
 * `PhoneType` := <home|personal|work>
 
 Declare and define
-* No default constructor
+* ~~No default constructor~~
 * Copy constructor
 * `operator=`
 * `friend std::ostream &operator<<(std::ostream &os, const PhonebookRecord &record)` 
@@ -57,8 +57,7 @@ Declare and define standard methods
 * Getters for `size` and `capacity`
 
 Also the following methods:
-* `PhonebookRecord add(const PhonebookRecord &)` adds a record to the list. If the size is more than the capacity, 
-prints error and does nothing.
+* `add(const PhonebookRecord &)` adds a record to the list.
 * `PhonebookRecord find(const char *name)` finds a record by name. 
 > Hint: Use `strcmp`
 * `friend Phonebook operator+(const Phonebook& first, const Phonebook &second)`

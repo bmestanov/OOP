@@ -8,6 +8,8 @@
 PhonebookRecord::PhonebookRecord(const char *name, const char *phoneNumber, PhoneType type) {
     std::strcpy(this->name, name);
     std::strcpy(this->phoneNumber, phoneNumber);
+    // or if you're on Visual Studio
+    // std::strcpy_s(this->name, sizeof this->name, name)
     this->type = type;
 }
 

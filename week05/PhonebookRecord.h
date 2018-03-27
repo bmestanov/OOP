@@ -13,6 +13,10 @@ enum PhoneType {
 
 class PhonebookRecord {
 public:
+    // Let the compiler handle all initialization
+    // alternatively, you can write an empty default constructor
+    PhonebookRecord() = default;
+
     PhonebookRecord(const char *name, const char *phoneNumber, PhoneType type);
 
     PhonebookRecord(const PhonebookRecord &);
@@ -20,6 +24,9 @@ public:
     PhonebookRecord &operator=(const PhonebookRecord &);
 
     friend std::ostream &operator<<(std::ostream &, const PhonebookRecord &);
+
+    // Now Phonebook can "see" everything on PhonebookRecord
+    friend class Phonebook;
 
 private:
     char name[50];
