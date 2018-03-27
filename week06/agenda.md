@@ -24,7 +24,7 @@ Also the following methods:
 > Hint: Use `strcmp`
 * `friend Phonebook operator+(const Phonebook& first, const Phonebook &second)`
   Concatenates two phonebooks
-* `friend std::ostream &operator<<(const std::ostream &os, const Phonebook &pb)`
+* `friend std::ostream &operator<<(std::ostream &os, const Phonebook &pb)`
 
 ## Next step
 Make the container auto-expand
@@ -51,7 +51,7 @@ Also the following methods:
 * `int indexOf(int value)` finds the index of the argument, or -1 if the item is not in the list.
 * `int operator[](int index) const` finds the value, given an index.
 * `friend AutoExpandArray operator+(const AutoExpandArray& first, const AutoExpandArray &second)`
-* `friend std::ostream &operator<<(const std::ostream &os, const AutoExpandArray &arr)`
+* `friend std::ostream &operator<<(std::ostream &os, const AutoExpandArray &arr)`
 
 Example
 ```

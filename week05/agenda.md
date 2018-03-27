@@ -62,4 +62,4 @@ Also the following methods:
 > Hint: Use `strcmp`
 * `friend Phonebook operator+(const Phonebook& first, const Phonebook &second)`
   Concatenates two phonebooks
-* `friend std::ostream &operator<<(const std::ostream &os, const Phonebook &pb)`
+* `friend std::ostream &operator<<(std::ostream &os, const Phonebook &pb)`
