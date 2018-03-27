@@ -32,7 +32,8 @@ Make the container auto-expand
 ## Exercise home
 Using the same techniques for expansion write
 `class AutoExpandArray`
-Contains **n** `int`s
+
+Contains arbitrary number of `int`s
 Has the following state:
 * `int *arr`
 * `size_t size`
