@@ -48,13 +48,13 @@ Also the following methods:
 * `AutoExpandArray &add(int value)` adds an item to the list.
 * `AutoExpandArray &removeLast()` removes the last item from the list.
 * `int indexOf(int value)` finds the index of the argument, or -1 if the item is not in the list.
-* `int operator[](int index)` finds the value, given an index. 
+* `int operator[](int index) const` finds the value, given an index.
 * `friend AutoExpandArray operator+(const AutoExpandArray& first, const AutoExpandArray &second)`
 * `friend std::ostream &operator<<(const std::ostream &os, const AutoExpandArray &arr)`
 
 Example
 ```
-AutoExpandArray arr(2); // What happens if we initialize the capacity with 1?
+AutoExpandArray arr(2); // What happens if we initialize the capacity with 0?
 arr.add(2).add(3).add(4);
 std::cout << arr[0]; // Prints 2
 arr.indexOf(3); // returns 1
