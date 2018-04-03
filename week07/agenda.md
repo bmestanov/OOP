@@ -22,7 +22,7 @@ Holds the following information
 
 Implement:
 * Constructors, operator=
-* `friend boolean operator==(const Song &, const Song &)`
+* `friend bool operator==(const Song &, const Song &)`
 * `friend std::ostream &operator<<(std::ostream &, const Song &)`
 * `friend std::istream &operator>>(std::istream &, const Song &)`
 
