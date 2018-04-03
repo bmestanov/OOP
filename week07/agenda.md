@@ -41,3 +41,7 @@ Implement methods:
 
 Reading for the vacation (a very helpful guide to C++ programming):
 https://erlerobotics.gitbooks.io/erle-robotics-cpp-gitbook/
+
+Reading for files:
+http://www.cplusplus.com/doc/tutorial/files/
+http://en.cppreference.com/w/cpp/language/reinterpret_cast
