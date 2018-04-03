@@ -24,7 +24,7 @@ Implement:
 * Constructors, operator=
 * `friend bool operator==(const Song &, const Song &)`
 * `friend std::ostream &operator<<(std::ostream &, const Song &)`
-* `friend std::istream &operator>>(std::istream &, const Song &)`
+* `friend std::istream &operator>>(std::istream &, Song &)`
 
 `class Tracklist` - a dynamic container for `Song` instances.
 Make sure that all songs in the container are unique.
