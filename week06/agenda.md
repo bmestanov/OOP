@@ -31,9 +31,10 @@ Make the container auto-expand
 
 ## Exercise home
 Using the same techniques for expansion write
-`class AutoExpandArray`
+`class IntArray`
 
 Contains arbitrary number of `int`s
+
 Has the following state:
 * `int *arr`
 * `size_t size`
@@ -46,16 +47,16 @@ Declare and define standard methods
 * Getters for `size` and `capacity`
 
 Also the following methods:
-* `AutoExpandArray &add(int value)` adds an item to the list.
-* `AutoExpandArray &removeLast()` removes the last item from the list.
+* `IntArray &add(int value)` adds an item to the list.
+* `IntArray &removeLast()` removes the last item from the list.
 * `int indexOf(int value)` finds the index of the argument, or -1 if the item is not in the list.
 * `int operator[](int index) const` finds the value, given an index.
-* `friend AutoExpandArray operator+(const AutoExpandArray& first, const AutoExpandArray &second)`
-* `friend std::ostream &operator<<(std::ostream &os, const AutoExpandArray &arr)`
+* `friend IntArray operator+(const IntArray& first, const IntArray &second)`
+* `friend std::ostream &operator<<(std::ostream &os, const IntArray &arr)`
 
 Example
 ```
-AutoExpandArray arr(2); // What happens if we initialize the capacity with 0?
+IntArray arr(2); // What happens if we initialize the capacity with 0?
 arr.add(2).add(3).add(4);
 std::cout << arr[0]; // Prints 2
 arr.indexOf(3); // returns 1
