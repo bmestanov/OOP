@@ -16,8 +16,8 @@
 `class Song`
 
 Holds the following information
-* `char *name`
-* `char *artist`
+* `char name[50]`
+* `char artist[50]`
 * `unsigned int duration`
 
 Implement:
