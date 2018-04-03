@@ -35,7 +35,7 @@ Implement methods:
 * `remove(size_t index)`
 * `remove(const Song &)`
 * `friend std::ostream &operator<<(std::ostream &, const Tracklist &)`
-* `friend std::istream &operator>>(std::istream &, const Tracklist &)`
+* `friend std::istream &operator>>(std::istream &, Tracklist &)`
 
 > Serialize & deserialize objects using std::fstream
 
