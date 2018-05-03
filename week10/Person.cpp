@@ -6,7 +6,7 @@
 #include <iostream>
 #include "Person.h"
 
-Person::Person(char *name, unsigned int age) {
+Person::Person(const char *name, unsigned int age) {
     std::cout << "Person constructor called" << std::endl;
     strcpy(this->name, name);
     this->age = age;
@@ -42,4 +42,12 @@ void Person::setAge(unsigned int age) {
 std::ostream &operator<<(std::ostream &os, const Person &p) {
     os << p.name << ", " << p.age;
     return os;
+}
+
+const char *Person::getName() const {
+    return name;
+}
+
+void Person::setName(const char *name) {
+    strcpy(this->name, name);
 }

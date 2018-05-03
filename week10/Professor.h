@@ -10,7 +10,7 @@
 
 class Professor : public Person {
 public:
-    Professor(char *name, unsigned int age, unsigned int papers);
+    Professor(const char *name, unsigned int age, unsigned int papers);
 
     Professor(const Professor &);
 

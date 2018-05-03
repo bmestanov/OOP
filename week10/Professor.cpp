@@ -4,7 +4,7 @@
 
 #include "Professor.h"
 
-Professor::Professor(char *name, unsigned int age, unsigned int papers) :
+Professor::Professor(const char *name, unsigned int age, unsigned int papers) :
         Person(name, age) {
     std::cout << "Professor constructor called" << std::endl;
     this->age;

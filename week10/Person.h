@@ -12,7 +12,7 @@ public:
 
     Person() = default;
 
-    Person(char *name, unsigned int age);
+    Person(const char *name, unsigned int age);
 
     Person(const Person &);
 
@@ -25,6 +25,10 @@ public:
     unsigned int getAge() const;
 
     void setAge(unsigned int age);
+
+    const char *getName() const;
+
+    void setName(const char *);
 
 protected:
     char name[50];

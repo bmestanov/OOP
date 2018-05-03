@@ -12,7 +12,7 @@ class Song {
 public:
     Song() = default;
 
-    Song(char *name, char *artist, unsigned int duration);
+    Song(const char *name, const char *artist, unsigned int duration);
 
     friend std::ostream &operator<<(std::ostream &, const Song &);
 

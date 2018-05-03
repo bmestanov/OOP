@@ -5,7 +5,7 @@
 #include <cstring>
 #include "Song.h"
 
-Song::Song(char *name, char *artist, unsigned int duration) {
+Song::Song(const char *name, const char *artist, unsigned int duration) {
     strcpy(this->artist, artist);
     this->duration = duration;
     strcpy(this->name, name);
