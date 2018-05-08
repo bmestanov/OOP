@@ -18,7 +18,9 @@ public:
 
     Person &operator=(const Person &);
 
-    ~Person();
+    virtual ~Person();
+
+    virtual void greet() const;
 
     friend std::ostream &operator<<(std::ostream &, const Person &);
 

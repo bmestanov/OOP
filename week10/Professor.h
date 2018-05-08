@@ -10,13 +10,21 @@
 
 class Professor : public Person {
 public:
+    Professor();
+
     Professor(const char *name, unsigned int age, unsigned int papers);
 
     Professor(const Professor &);
 
     Professor &operator=(const Professor &);
 
+    void greet() const override;
+
     ~Professor();
+
+    unsigned int getPapers() const;
+
+    void setPapers(unsigned int papers);
 
     friend std::ostream &operator<<(std::ostream &, const Professor &);
 

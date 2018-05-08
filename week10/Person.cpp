@@ -31,6 +31,10 @@ Person::~Person() {
     std::cout << "Person destructor called" << std::endl;
 }
 
+void Person::greet() const {
+    std::cout << "Hello, my name is " << name << ". I am " << age << " years old.";
+}
+
 unsigned int Person::getAge() const {
     return age;
 }
