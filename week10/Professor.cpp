@@ -11,7 +11,6 @@ Professor::Professor() {
 Professor::Professor(const char *name, unsigned int age, unsigned int papers) :
         Person(name, age) {
     std::cout << "Professor constructor called" << std::endl;
-    this->age;
     this->papers = papers;
 }
 
