@@ -9,6 +9,7 @@
 #include "Song.h"
 #include "Tracklist.h"
 #include <iostream>
+#include <cstring>
 
 int main07() {
     // Warning! The classes Song and Tracklist are not implemented fully.
@@ -59,7 +60,7 @@ int main07() {
 
     char buffer[sizeof(Song) + 1]; // we'll need a buffer with the size of a song plus \0
     in.open("songFile.bin", std::ios::binary);
-    in.read(buffer, sizeof(buffer)); // read into the buffer - now has the same byte representation as the original
+    in.read(buffer, strlen(buffer) + 1); // read into the buffer - now has the same byte representation as the original
     in.close();
     // use casting again
     Song song1_binary_cpy = *reinterpret_cast<Song *>(&buffer);

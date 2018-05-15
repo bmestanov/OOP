@@ -8,12 +8,12 @@
 
 TaxiDriver::TaxiDriver(const char *name, unsigned int age, const char *carModel) :
         Person(name, age) {
-    this->carModel = new char[sizeof(carModel)];
+    this->carModel = new char[strlen(carModel) + 1];
     strcpy(this->carModel, carModel);
 }
 
 TaxiDriver::TaxiDriver(const TaxiDriver &other) : Person(other) {
-    this->carModel = new char[sizeof(carModel)];
+    this->carModel = new char[strlen(carModel) + 1];
     strcpy(this->carModel, carModel);
 }
 

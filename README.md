@@ -21,4 +21,4 @@ The reason for this is because in the main function hello is treated as an array
 the length of the word + 1 (what we expect). But as soon as we pass `hello` as an argument, it's treated as a char pointer,
 which will have size 8/16 no matter the word.
 
-Conclusion: Use `strlen` for finding length of char arrays.
+Conclusion: __Use `strlen` for finding length of char arrays.__
