@@ -15,7 +15,7 @@ TextButton::TextButton(double x, double y, const Color &color, const char *text)
 
 TextButton::TextButton(const TextButton &other) : Button(other) {
     std::cout << "Copy-constructing text-button at address " << (long) this << std::endl;
-    this->text = new char[sizeof(other.text)];
+    this->text = new char[strlen(other.text) + 1];
     strcpy(this->text, other.text);
 }
 
@@ -23,7 +23,7 @@ TextButton &TextButton::operator=(const TextButton &other) {
     if (this != &other) {
         Button::operator=(other);
         delete[] this->text;
-        this->text = new char[sizeof(other.text)];
+        this->text = new char[strlen(other.text) + 1];
         strcpy(this->text, other.text);
     }
 
