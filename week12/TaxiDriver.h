@@ -22,7 +22,7 @@ public:
 
     const char *getCarModel() const;
 
-    void setCarModel(char *carModel);
+    void setCarModel(const char *carModel);
 
 private:
     char *carModel;

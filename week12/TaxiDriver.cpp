@@ -26,8 +26,14 @@ const char *TaxiDriver::getCarModel() const {
     return carModel;
 }
 
-void TaxiDriver::setCarModel(char *carModel) {
-    TaxiDriver::carModel = carModel;
+void TaxiDriver::setCarModel(const char *carModel) {
+    if (strlen(this->carModel) < strlen(carModel)) {
+        // Allocate more space only if needed
+        delete[] this->carModel;
+        this->carModel = new char[strlen(carModel) + 1];
+    }
+
+    strcpy(this->carModel, carModel);
 }
 
 void TaxiDriver::greet() const {
