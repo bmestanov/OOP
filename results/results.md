@@ -1,7 +1,5 @@
-# Exam 2 results
+# Results
 
 [Check this link](https://docs.google.com/spreadsheets/d/11dI6VsYb7SJbiGEjoZ_IFe0bSsTa7lBllyUs2hVrI2Q/edit?usp=sharing#gid=1066109504)
 
-Contestation / feedback -> Tuesday 29.05.2018 12:00 at 107, FMI
-
-or bmestanov@gmail.com
+Contact: bmestanov@gmail.com

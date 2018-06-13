@@ -11,4 +11,4 @@ add_executable(oop main.cpp
         week09/NTuple.h week09/Set.h
         week10/Person.cpp week10/Person.h week10/Professor.cpp week10/Professor.h
         week12/TaxiDriver.cpp week12/TaxiDriver.h week12/Shape.cpp week12/Shape.h week12/Triangle.cpp week12/Triangle.h week12/Circle.cpp week12/Circle.h
-        week13/View.cpp week13/View.h week13/Button.cpp week13/Button.h week13/Color.cpp week13/Color.h week13/TextButton.cpp week13/TextButton.h week15/Item.cpp week15/Item.h)
+        week13/View.cpp week13/View.h week13/Button.cpp week13/Button.h week13/Color.cpp week13/Color.h week13/TextButton.cpp week13/TextButton.h week15/Item.cpp week15/Item.h solutions/hw3/Customer.cpp solutions/hw3/Customer.h solutions/hw3/Account.cpp solutions/hw3/Account.h solutions/hw3/CurrentAccount.cpp solutions/hw3/CurrentAccount.h solutions/hw3/SavingsAccount.cpp solutions/hw3/SavingsAccount.h solutions/hw3/PrivilegeAccount.cpp solutions/hw3/PrivilegeAccount.h solutions/hw3/Bank.cpp solutions/hw3/Bank.h)
